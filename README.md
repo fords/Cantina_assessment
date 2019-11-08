@@ -21,7 +21,7 @@ identifier - The view identifier, e.g. "#videoMode"
 ## ASSUMPTION
 When identifier selector is used and valid, the program displays the selector part, finishes running and exits
 
-When class has the same name, first class is used
+When classes have the same name when class selector is used, first class is used
 
 When invalid selector is used, the program exits
 
