@@ -1,0 +1,91 @@
+{
+  "identifier": "System",
+  "subviews": [
+           {
+             "class": "StackView",
+             "classNames": [
+               "column",
+               "container"
+             ],
+
+            "subviews": [
+               {
+                 "class": "Box",
+                 "label": {
+                   "text": {
+                     "text": "Display"
+                   }
+                 },
+                 "contentView": {
+                   "subviews": [
+                     {
+                       "class": "Input",
+                       "label": {
+                         "text": {
+                           "text": "Video mode"
+                         }
+                       },
+                       "control": {
+                         "class": "VideoModeSelect",
+                         "identifier": "videoMode"
+                       }
+                     },
+                     {
+                       "class": "Input",
+                       "label": {
+                         "text": {
+                           "text": "High DPI (4K)"
+                         }
+                       },
+                       "control": {
+                         "class": "CvarCheckbox",
+                         "var": "r_allow_high_dpi"
+                       }
+                     },
+                     {
+                       "class": "Input",
+                       "label": {
+                         "text": {
+                           "text": "Window mode"
+                         }
+                       },
+                       "control": {
+                         "class": "CvarSelect",
+                         "identifier": "windowMode",
+                         "var": "r_fullscreen"
+                       }
+                     },
+                     {
+                       "class": "Input",
+                       "label": {
+                         "text": {
+                           "text": "Vertical sync"
+                         }
+                       },
+                       "control": {
+                         "class": "CvarSelect",
+                         "identifier": "verticalSync",
+                         "var": "r_swap_interval"
+                       }
+                     },
+                     {
+                       "class": "Input",
+                       "label": {
+                         "text": {
+                           "text": "Frame limiter"
+                         }
+                       },
+                       "control": {
+                         "class": "CvarSlider",
+                         "min": 0,
+                         "max": 250,
+                         "step": 5,
+                         "var": "cl_max_fps"
+                       }
+                     }
+                   ]
+                 }
+               }
+            ]
+          ]
+      }
