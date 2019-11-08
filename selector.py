@@ -3,7 +3,6 @@ with open("system.json", "r") as file:
      var = json.loads(file.read())
 
 
-
 def scan():
     iterate = var
     isNext = True
@@ -40,11 +39,7 @@ def scan():
                     break
             i += 1
 
-        if ('subviews' in iterate and len(iterate['subviews']) == 0):# or  # the end is reached, exit
-            print('end here')
-            isNext = False
-        if ('subviews' not in iterate and 'contentView' not in iterate):
-            print('end here not subview in iterate')
+        if ('subviews' in iterate and len(iterate['subviews']) == 0) or ('subviews' not in iterate and 'contentView' not in iterate): # the end is reached, exit
             isNext = False
         if 'subviews' in iterate:
             iterate = iterate['subviews'][i]
