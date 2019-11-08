@@ -45,5 +45,11 @@ should exit the program
 ```
 1st input: container
 
-should give the json object list that contains container
+should give the json object list that contains container which is CSS class name
 ```
+
+## TO RUN LOCALLY
+
+- Download the file
+
+- Run ``` python selector.py ``` in terminal 
