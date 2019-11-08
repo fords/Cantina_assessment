@@ -27,17 +27,23 @@ When invalid selector is used, the program exits
 
 ## EXAMPLES
 ```
-1st input StackView
-2nd input StackView
-3rd input StackView
-4th input videoMode  
+1st input: StackView
+2nd input: StackView
+3rd input: StackView
+4th input: videoMode  
 
-should give  the identifier class output
+should give the identifier class output
 ```
 
 ```
-1st input StackView
-2nd input a
+1st input: StackView
+2nd input: a
 
 should exit the program
+```
+
+```
+1st input: container
+
+should give the json object list that contains container
 ```
