@@ -21,7 +21,7 @@ identifier - The view identifier, e.g. "#videoMode"
 ## ASSUMPTION
 When identifier selector is used and valid, the program displays the selector part, finishes running and exits
 
-When classes have the same name when class selector is used, first class is used
+When classes have the same name when class selector is used, first class is shown in stdout
 
 When invalid selector is used, the program exits
 
@@ -52,4 +52,4 @@ should give the json object list that contains container which is CSS class name
 
 - Download the file
 
-- Run ``` python selector.py ``` in terminal 
+- Run ``` python selector.py ``` in terminal
