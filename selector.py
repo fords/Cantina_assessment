@@ -8,23 +8,18 @@ def scan():
     isNext = True
     while isNext:
         txt = input(" Enter selector StackView class, container classNames or #videoMode identifier: ")
-
+        
         i = 0
-        isStillSearch = True
-        while isStillSearch and 'subviews' in iterate and i < len(iterate['subviews']):
+        while  'subviews' in iterate and i < len(iterate['subviews']):
             if 'contentView' in iterate['subviews'][i]: #  content view contains identifier, find the selector
                 j = 0
                 while j < (len(iterate['subviews'][i]['contentView']['subviews'])):
-                    # print(iterate['subviews'][i]['contentView']['subviews'][j])
                     if ("identifier" in iterate['subviews'][i]['contentView']['subviews'][j]['control'] and \
                     iterate['subviews'][i]['contentView']['subviews'][j]['control']["identifier"] == txt) or \
-                    (iterate['subviews'][i]['contentView']['subviews'][j]["class"] == txt): # or \
-                        #iterate['subviews'][i]['contentView']['subviews'][j]['control']["identifier"] == txt :
+                    (iterate['subviews'][i]['contentView']['subviews'][j]["class"] == txt):
                         print(iterate['subviews'][i]['contentView']['subviews'][j] )
                         return
-
                     j += 1
-
 
             if iterate['subviews'][i] and "class" in iterate['subviews'][i]  and iterate['subviews'][i]["class"] == txt:
                 print(iterate['subviews'][i]) # if the selector is class
